@@ -1,0 +1,367 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.header{
+    min-height: 100vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(ace.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display:flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width:80px;
+
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding:10px 50px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    text-decoration: solid;
+}
+.nav-links ul li::after{
+    content:"";
+    width: 0%;
+    height:2px;
+    background:#f8f6f6;
+    display:block;
+    margin:auto;
+    transition:0.5s;
+}
+.nav-links ul li:hover::after{
+    width:100%;
+}
+.text-box{
+    width:90%;
+    color:#fff;
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size:18px;
+    color: #fff;
+}
+.btn{
+    display:inline-block;
+    text-decoration: none;
+    color: #fff;
+    border:1px solid #fff;
+    padding: 12px 34px;
+    font-size:13px;
+    background:transparent;
+    position: relative;
+}
+.btn:hover{
+    border:1px solid #b7b3b3;
+    background: #b7b3b3;
+    transition:1s;
+}
+.COURSE{
+    width:80%;
+    margin:auto;
+    text-align:center;
+    padding-top:100px;
+    
+}
+h1{
+    font-size: 36px;
+    font-weight:600;
+}
+p{
+    color:#151515;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding:10px;
+}
+.row{
+    margin-top: 5%;
+    display:flex;
+    justify-content: space-between;
+}
+.column{
+   flex-basis: 31%;
+   background: #dabdbd;
+   border-radius: 10px;
+   margin-bottom:5%;
+   padding:20px 12px;
+   box-sizing:border-box;
+   transition: 0.5s;
+   
+}
+h3{
+    text-align:center;
+    font-weight: 600;
+    margin:10px 0;
+
+}
+.column:hover{
+    box-shadow: 0 0 20px 0px rgba(5, 4, 4, 0.2);
+}
+.campus{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    padding-top:50px;
+}
+.campusimg{
+    flex-basis:32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position:relative;
+    overflow: hidden;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100px;
+    position: absolute;
+    top:0;
+    left:0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(5, 4, 4, 0.2);
+}
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(contact.jfif);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align:center;
+    padding: 100px 0;
+}
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding:0;
+}
+.footer{
+    width:100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.icons i{
+    color: #151515;
+    margin-right: 20px;
+    padding: 18px 20px;
+    justify-content: space-between;   
+}
+.sub-header{
+    height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(about.jfif);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header h1{
+    margin-top: 100px;
+}
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top:80px;
+    padding-bottom: 50px;
+}
+.col{
+    flex-basis: 48%;
+    padding:30px 2px;
+}
+.col img{
+    width: 100%;
+}
+.col h1{
+    padding-top:0;
+
+}
+.col p{
+    padding: 15px 0 25px;
+    font-size: 15px;
+    padding-top: 10%;
+}
+.blog-content{
+    width:80%;
+    margin: auto;
+    padding:60px 0;
+
+}
+.blog-left{
+    flex-basis: 65%;
+}
+.blog-left img{
+    width: 100%;
+}
+.blog-left h2{
+    color:#222;
+    font-weight:600;
+    margin:30px;
+}
+.blog-left p{
+    color:#222;
+   
+}
+.blog-right{
+    flex-basis: 32%;
+
+}
+.blog-right h2{
+    background: #ca2f2f;
+    color:#fff;
+    padding:7px 0;
+    font-size: 16px;
+    margin-bottom:20px;
+}
+.blog-right div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:#555;
+    padding: 8px;
+    box-sizing:border-box;
+}
+.comment-box{
+    border:1px solid #151515;
+    margin: 50px;
+    padding:10px 20px;
+}
+.comment-box h3{
+    text-align: left;
+
+}
+.comment-form input, .comment-form textarea{
+    width: 100%;
+    padding:10px;
+    margin:15px 0;
+    box-sizing: border-box;
+    border:none;
+    outline:none;
+    background:#f0f0f0;
+
+}
+.location{
+    width:80%;
+    margin: auto;
+    padding:80px 0;
+}
+.location iframe{
+    width:100%;
+}
+.contactus{
+    width:80%;
+    margin:auto;
+}
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom:30px;
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-col div i{
+    font-size:20px;
+    color:#151515;
+    margin: 10px;
+    margin-right: 40px;
+    
+}
+.contact-col div p{
+    padding:0;
+}
+.contact-col div h3{
+    font-size: 20px;
+    margin-bottom:5px;
+    font-weight: 600;
+    
+}
+.contact-col input, .contact-col textarea{
+    width:100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border:1px solid #ccc;
+}
+nav{
+    list-style: none;
+   
+}
+nav li{
+    display:inline-block;
+    position:relative;
+}
+nav li a{
+    display: block;
+    padding:20px 25px;
+    color:#fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+nav li ul.dropdown{
+    width: 100%;
+    background:#555;
+    position:absolute;
+    z-index:999;
+    display:none;
+}
+nav li a:hover{
+    background:#222;
+}
+nav li:hover ul.dropdown{
+    display:block;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,200px);
+    grid-auto-rows:150px;
+    grid-row-gap:200px;
+    grid-column-gap:150px;
+    padding-left:150px;
+    padding-top:30px;
+    padding-bottom: 30px;
+}
+.container img{
+    width: 220px;
+    height:220px;
+    
+}
+.container img:hover{
+    opacity: 0.1;
+    transform:scale(1,1)
+  
+    
+}
